@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
+
+html,
 body {
-    background-color: #e2eaf1; /* un tono más claro de azul */
-  }
-  
+  height: 100%;
+  margin: 0;
+  background-color: #e2eaf1;
+}
+
+app-root {
+  height: 100%;
+}
