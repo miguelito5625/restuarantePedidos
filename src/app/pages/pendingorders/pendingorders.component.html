@@ -1,28 +1,23 @@
-<br>
-<br>
-<br>
-<div class="card-container">
 
-    <div *ngFor="let order of allOrder; index as i" class="card">
-        <div class="card-title">
-          Pedido #{{i+1}}
-        </div>
-        <div class="card-subtitle">
-          Enviar a: {{order.direccion}}
-        </div>
-        <div class="card-subtitle">
-          Total del pedido: Q{{order.total}}
-        </div>
-        <div class="card-content">
+<div class="row">
+  <div *ngFor="let order of allOrder; index as i" class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+    <div class="card shadow shadow-md mb-4">
+      <h5 class="card-header bg-indigo-800"> Pedido #{{i+1}}</h5>
+      <div class="card-body">
+        <h5 class="card-title">Enviar a: {{order.direccion}}</h5>
+        <h5 class="card-title">Total del pedido: Q{{order.total}}</h5>
+        <div class="card-text">
           platillos:
           <ul>
             <li *ngFor="let platillo of order.platillos">{{platillo.nombre}} = {{platillo.cantidad}}</li>
           </ul>
-        </div>`
-        <div class="card-actions">
-          <button class="button button-primary">Atender</button>
         </div>
-      </div>                                           
-
-  
-</div> 
+      </div>
+      <div class="card-footer text-muted">
+        <div class="text-end">
+          <a href="#" class="btn btn-primary">Preparar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
