@@ -3,217 +3,26 @@
 <br>
 <div class="card-container">
 
-    <div class="card">
+    <div *ngFor="let order of allOrder; index as i" class="card">
         <div class="card-title">
-          Titulo2
+          Pedido #{{i+1}}
         </div>
         <div class="card-subtitle">
-          Subtitulo
-        </div>
-        <div class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas in vero quas ipsam aliquid quam officia ducimus eaque dolore amet?
-        </div>`
-        <div class="card-actions">
-          <button class="button button-primary">Mostrar</button>
-        </div>
-      </div>
-    
-      <div class="card">
-        <div class="card-title">
-          Titulo
+          Enviar a: {{order.direccion}}
         </div>
         <div class="card-subtitle">
-          Subtitulo
+          Total del pedido: Q{{order.total}}
         </div>
         <div class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas in vero quas ipsam aliquid quam officia ducimus eaque dolore amet?
+          platillos:
+          <ul>
+            <li *ngFor="let platillo of order.platillos">{{platillo.nombre}} = {{platillo.cantidad}}</li>
+          </ul>
         </div>`
         <div class="card-actions">
-          <button class="button button-primary">Mostrar</button>
+          <button class="button button-primary">Atender</button>
         </div>
-      </div>
-    
-      <div class="card">
-        <div class="card-title">
-          Titulo
-        </div>
-        <div class="card-subtitle">
-          Subtitulo
-        </div>
-        <div class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas in vero quas ipsam aliquid quam officia ducimus eaque dolore amet?
-        </div>`
-        <div class="card-actions">
-          <button class="button button-primary">Mostrar</button>
-        </div>
-      </div>
-    
-      <div class="card">
-        <div class="card-title">
-          Titulo
-        </div>
-        <div class="card-subtitle">
-          Subtitulo
-        </div>
-        <div class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas in vero quas ipsam aliquid quam officia ducimus eaque dolore amet?
-        </div>`
-        <div class="card-actions">
-          <button class="button button-primary">Mostrar</button>
-        </div>
-      </div>
-    
-      <div class="card">
-        <div class="card-title">
-          Titulo
-        </div>
-        <div class="card-subtitle">
-          Subtitulo
-        </div>
-        <div class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas in vero quas ipsam aliquid quam officia ducimus eaque dolore amet?
-        </div>`
-        <div class="card-actions">
-          <button class="button button-primary">Mostrar</button>
-        </div>
-      </div>
-    
-      <div class="card">
-        <div class="card-title">
-          Titulo
-        </div>
-        <div class="card-subtitle">
-          Subtitulo
-        </div>
-        <div class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas in vero quas ipsam aliquid quam officia ducimus eaque dolore amet?
-        </div>`
-        <div class="card-actions">
-          <button class="button button-primary">Mostrar</button>
-        </div>
-      </div>
-    
-      <div class="card">
-        <div class="card-title">
-          Titulo
-        </div>
-        <div class="card-subtitle">
-          Subtitulo
-        </div>
-        <div class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas in vero quas ipsam aliquid quam officia ducimus eaque dolore amet?
-        </div>`
-        <div class="card-actions">
-          <button class="button button-primary">Mostrar</button>
-        </div>
-      </div>
-    
-      <div class="card">
-        <div class="card-title">
-          Titulo
-        </div>
-        <div class="card-subtitle">
-          Subtitulo
-        </div>
-        <div class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas in vero quas ipsam aliquid quam officia ducimus eaque dolore amet?
-        </div>`
-        <div class="card-actions">
-          <button class="button button-primary">Mostrar</button>
-        </div>
-      </div>
-    
-      <div class="card">
-        <div class="card-title">
-          Titulo
-        </div>
-        <div class="card-subtitle">
-          Subtitulo
-        </div>
-        <div class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas in vero quas ipsam aliquid quam officia ducimus eaque dolore amet?
-        </div>`
-        <div class="card-actions">
-          <button class="button button-primary">Mostrar</button>
-        </div>
-      </div>
-    
-      <div class="card">
-        <div class="card-title">
-          Titulo
-        </div>
-        <div class="card-subtitle">
-          Subtitulo
-        </div>
-        <div class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas in vero quas ipsam aliquid quam officia ducimus eaque dolore amet?
-        </div>`
-        <div class="card-actions">
-          <button class="button button-primary">Mostrar</button>
-        </div>
-      </div>
-    
-      <div class="card">
-        <div class="card-title">
-          Titulo
-        </div>
-        <div class="card-subtitle">
-          Subtitulo
-        </div>
-        <div class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas in vero quas ipsam aliquid quam officia ducimus eaque dolore amet?
-        </div>`
-        <div class="card-actions">
-          <button class="button button-primary">Mostrar</button>
-        </div>
-      </div>
-    
-      <div class="card">
-        <div class="card-title">
-          Titulo
-        </div>
-        <div class="card-subtitle">
-          Subtitulo
-        </div>
-        <div class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas in vero quas ipsam aliquid quam officia ducimus eaque dolore amet?
-        </div>`
-        <div class="card-actions">
-          <button class="button button-primary">Mostrar</button>
-        </div>
-      </div>
-    
-      <div class="card">
-        <div class="card-title">
-          Titulo
-        </div>
-        <div class="card-subtitle">
-          Subtitulo
-        </div>
-        <div class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas in vero quas ipsam aliquid quam officia ducimus eaque dolore amet?
-        </div>`
-        <div class="card-actions">
-          <button class="button button-primary">Mostrar</button>
-        </div>
-      </div>
-    
-      <div class="card">
-        <div class="card-title">
-          Titulo
-        </div>
-        <div class="card-subtitle">
-          Subtitulo
-        </div>
-        <div class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas in vero quas ipsam aliquid quam officia ducimus eaque dolore amet?
-        </div>`
-        <div class="card-actions">
-          <button class="button button-primary">Mostrar</button>
-        </div>
-      </div>
-    
-                                                          
+      </div>                                           
 
   
 </div> 
